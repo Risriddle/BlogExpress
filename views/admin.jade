@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Admin Panel
+    
+      
+    script(src="/js/admin.js")
+    link(rel="stylesheet" type="text/css" href="/css/admin.css") 
+
+  body
+    h1 Admin Panel
+    button#createButton(onclick="redirectToCreateBlog()") Create Blog
+    button#deleteButton(onclick="redirectToDeleteBlog()") Delete Blog
+    button#updateButton(onclick="redirectToUpdateBlog()") Update Blog
+    ul#blogList
+      //- Blog items will be dynamically added here
+    p#blogUpdate
+    div#display

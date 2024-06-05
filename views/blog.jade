@@ -1,0 +1,14 @@
+extends main
+
+block body
+    div.blog-post
+        h2 #{blog.title}
+        p.author-date
+            strong Author:
+            | #{blog.author}
+            br
+            strong Date:
+            | #{blog.date}
+        p #{blog.body}
+    //- a(href="/blogsUser") Back to Blogs
+    button.button-back(type="button" onclick="window.location.href='/blogsUser'") Back to Blogs

@@ -1,0 +1,124 @@
+/* admin.css */
+body {
+    font-family: Arial, sans-serif; /* Set font family for the body */
+    background-color: #f8f9fa; /* Set background color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+h1 {
+    text-align: center; /* Center align the heading */
+}
+
+button {
+    display: block; /* Display buttons as blocks */
+    margin: 20px auto; /* Center align buttons */
+    padding: 10px 20px; /* Add padding to buttons */
+    background-color: #007bff; /* Set background color of buttons */
+    color: #fff; /* Set text color of buttons */
+    border: none; /* Remove button border */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Add pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+ul#blogList {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+#blogUpdate {
+    text-align: center; /* Center align blog update message */
+    margin-top: 20px; /* Add margin above blog update message */
+}
+
+
+
+
+
+
+
+
+/* Form container */
+.form-container {
+    max-width: 400px; /* Set max width for the form container */
+    margin: 0 auto; /* Center the form container */
+    padding: 20px; /* Add padding to the form container */
+    border: 1px solid #ccc; /* Add border to the form container */
+    border-radius: 8px; /* Add border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Form input fields */
+.input-group {
+    margin-bottom: 20px; /* Add margin bottom to input groups */
+}
+
+label {
+    display: block; /* Display labels as blocks */
+    margin-bottom: 5px; /* Add margin bottom to labels */
+    font-weight: bold; /* Set font weight to bold */
+}
+
+input[type="text"],
+textarea {
+    width: 100%; /* Set width to 100% */
+    padding: 10px; /* Add padding to input fields */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 4px; /* Add border radius */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+/* Submit button */
+button[type="submit"] {
+    width: 100%; /* Set width to 100% */
+    padding: 10px; /* Add padding to button */
+    background-color: #007bff; /* Set background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Add pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Update button */
+.update-button {
+    margin-left: 10px; /* Add margin to the left of the button */
+    background-color: #28a745; /* Set background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Add pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.update-button:hover {
+    background-color: #218838; /* Change background color on hover */
+}
+
+/* Delete button */
+.delete-button {
+    margin-left: 10px; /* Add margin to the left of the button */
+    background-color: #dc3545; /* Set background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Add pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.delete-button:hover {
+    background-color: #c82333; /* Change background color on hover */
+}

@@ -1,0 +1,9 @@
+extends main 
+
+block body
+    if msg
+        p= msg
+    form.login-form(method="post" action="/register")
+        input.input-field(name="name" placeholder="Set Username" type="text")
+        input.input-field(name="password" placeholder="Set Password" type="password")
+        button.login-button(type="submit") SIGN UP

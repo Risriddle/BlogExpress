@@ -1,0 +1,22 @@
+extends main 
+
+block body
+    // Form container
+    .form-container
+        h1 Create Article
+        // Form
+        form.form(method="post" action="/create")
+            // Author input
+            div.input-group
+                label(for="author") Author:
+                input#author(name="author" placeholder="Enter author name" type="text")
+            // Title input
+            div.input-group
+                label(for="title") Title:
+                input#title(name="title" placeholder="Enter title of article" type="text")
+            // Body textarea
+            div.input-group
+                label(for="body") Content:
+                textarea#body(name="body" placeholder="Enter content")
+            // Submit button
+            button#createButton(type="submit") CREATE

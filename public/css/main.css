@@ -1,0 +1,264 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color:lightgray;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:lightslategray;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;}
+
+
+/* Light mode */
+body.bg-light {
+    background-color: #f8f9fa !important; /* Example light background color */
+    color: #212529; /* Example text color for light mode */
+}
+
+/* Dark mode */
+body.bg-dark {
+    background-color: #343a40 !important; /* Example dark background color */
+    color: #dee2e6; /* Example text color for dark mode */
+}
+
+
+.container-fluid{
+    background-color:lightgray;
+}
+
+.navbar.navbar-expand-lg {
+    background-color: blue; /* Set the background color of the navbar */
+}
+
+.navbar-brand {
+    color: #0a0101; /* Set the color of the navbar brand (e.g., text) */
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* Set the color of the navbar links */
+}
+
+.navbar-toggler-icon {
+    background-color: blue; /* Set the color of the navbar toggler icon */
+}
+
+/* Change color of navbar on hover/focus */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color:blue; /* Set the hover/focus color for navbar links */
+}
+
+
+
+/*home.jade
+/* Home Page Styles */
+
+  
+  .container {
+    max-width: 800px; /* Set max width for content */
+    margin: 0 auto; /* Center content horizontally */
+    font-size: larger;
+  }
+  
+  img.img-fluid {
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Preserve aspect ratio */
+    margin-top: 20px; /* Add spacing below heading */
+  }
+  h1 {
+    margin-top: 20px;
+     /* Add spacing between heading and paragraph */
+  }
+
+
+/* Style for the blog post container */
+.blog-post {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Default background color */
+  color: #333; /* Default text color */
+}
+
+/* Style for the blog post title */
+.blog-post h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Style for the author and date */
+.blog-post .author-date {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Style for the blog post body */
+.blog-post p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Dark mode styles */
+body.bg-dark .blog-post {
+  background-color: #343a40; /* Dark background color */
+  color: #dee2e6; /* Light text color */
+}
+
+.button-back {
+  display: block;
+  margin: 0 auto; /* Center the button horizontally */
+  padding: 10px 20px; /* Add padding to the button */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 4px; /* Add border radius */
+  cursor: pointer; /* Add pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.button-back:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+/* Style for the login form */
+.login-form {
+  max-width: 300px; /* Set max width for the form */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px; /* Add padding to the form */
+  border: 1px solid #ccc; /* Add border to the form */
+  border-radius: 8px; /* Add border radius to the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow to the form */
+}
+
+/* Style for the input fields */
+.input-field {
+  width: 100%; /* Set width to 100% */
+  padding: 10px; /* Add padding to the input fields */
+  margin-bottom: 10px; /* Add margin below the input fields */
+  border: 1px solid #ccc; /* Add border to the input fields */
+  border-radius: 4px; /* Add border radius to the input fields */
+}
+
+/* Style for the login button */
+.login-button {
+  width: 100%; /* Set width to 100% */
+  padding: 10px; /* Add padding to the button */
+  background-color: #007bff; /* Set background color of the button */
+  color: #fff; /* Set text color of the button */
+  border: none; /* Remove border from the button */
+  border-radius: 4px; /* Add border radius to the button */
+  cursor: pointer; /* Add pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+
+/* Form container */
+.form-container {
+  max-width: 400px; /* Set max width for the form container */
+  margin: 0 auto; /* Center the form container */
+  padding: 20px; /* Add padding to the form container */
+  border: 1px solid #ccc; /* Add border to the form container */
+  border-radius: 8px; /* Add border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Form input fields */
+.input-group {
+  margin-bottom: 20px; /* Add margin bottom to input groups */
+}
+
+label {
+  display: block; /* Display labels as blocks */
+  margin-bottom: 5px; /* Add margin bottom to labels */
+  font-weight: bold; /* Set font weight to bold */
+}
+
+input[type="text"],
+textarea {
+  width: 100%; /* Set width to 100% */
+  padding: 10px; /* Add padding to input fields */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 4px; /* Add border radius */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+/* Submit button */
+button[type="submit"] {
+  width: 100%; /* Set width to 100% */
+  padding: 10px; /* Add padding to button */
+  background-color: #007bff; /* Set background color */
+  color: #fff; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add border radius */
+  cursor: pointer; /* Add pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+

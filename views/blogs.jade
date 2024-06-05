@@ -1,0 +1,51 @@
+//- extends main
+
+//- block body
+//-     h1 Blog Posts
+
+//-     each blog in blogs
+//-         div
+//-            a(href="/blogUser/#{blog._id}")
+//-                 h2 #{blog.title}
+            
+    
+extends main
+
+block body
+    h1 Blog Posts
+
+    div.card-container
+        each blog in blogs
+            div.card
+                a(href="/blogUser/#{blog._id}")
+                    //- img(src=blog.image, alt=blog.title + ' Image')
+                    div.card-content
+                        h2 #{blog.title}
+            
+    style.
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            width: calc(50% - 10px); /* Half the width with some spacing */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+        h1{
+            text-align:center;
+        }
